@@ -1,0 +1,41 @@
+#ifndef _TEST_H_20241007
+#define _TEST_H_20241007
+
+#include <stdio.h>
+#include "systick.h"
+#include "eeprom.h"
+#include "usart.h"
+
+/*!
+    \brief     	≤‚ ‘«∞Õ‚…Ë≥ı ºªØ
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+void All_Init(void);
+
+/*!
+    \brief     	µ•◊÷Ω⁄∂¡–¥≤‚ ‘
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+int EEPROM_Test_WriteReadOneByte(void);
+
+/*!
+    \brief     	“≥∂¡–¥≤‚ ‘
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+int EEPROM_Test_WriteReadOnePage(void);
+
+/*!
+    \brief     	∂‡◊÷Ω⁄∂¡–¥≤‚ ‘
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+int	EEPROM_Test_WriteReadOverPage(void);
+
+#endif
